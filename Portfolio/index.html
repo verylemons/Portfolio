@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kwae About Me</title>
+    <link rel="stylesheet" href="styles/index.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">  
+    <script src="Scripts/index.js"></script>
+</head>
+<body>
+    <!--BIG NAME-->
+    <div class="name">
+        <div class="particles">
+            <div id="particles-js"></div>
+            <script src="particles/particles.js"></script>
+            <script src="particles/demo/js/app.js"></script>
+        </div>
+        <div class="Kwae">
+            <section id="name-section">
+                <h1>KWAE HTOO</h1>
+            </section>
+        </div>
+    </div>
+    <!--BIG NAME-->
+    <div class="info-section">
+    <!--Navigation Bar-->
+        <div id="navbar">
+            <div class="nav-buttons">
+                <a href="projects.html" class="button">projects</a>
+                <a href="skillsets.html" class="button">skillsets</a>
+                <a href="connect.html" class="button">connect with me</a>
+            </div>
+        </div>
+        <!--Navigation Bar-->
+
+        <!--About Me-->
+        <div class="introduction">
+            <div class="welcome">
+                <h2>Welcome To My Portofolio!</h2>
+            </div>
+            <div class="about-me">
+                <section id="about-me-section">
+                    <p>
+                        My name is <span style="color:#E0bbE4"><strong>Kwae Htoo</strong></span>. I'm a second-year <span style="color:#E0bbE4"><strong>Mathematics-Computer Science</strong></span>
+                        major at the University of California San Diego.
+                    </p>
+                    <p>
+                        Feel free to reach out and <span style="color:#E0bbE4"><strong>connect with me!</strong></span>
+                    </p>
+                </section>
+            </div>
+            <!--slider-->
+            <div class="slider">
+                <div class="slides">
+                    <!--little buttons-->
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+                    <!--little buttons-->
+                    <!--slide images-->
+                    <div class="slide first">
+                        <img src="images/1.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="images/2.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="images/3.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="images/4.png" alt="">
+                    </div>
+                    <!--slide images-->
+                    <!--automatic nav-->
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                    </div>
+                    <!--automatic nav-->
+                </div>
+                <!--manual nagivation-->
+                <div class="navigation-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                </div>
+                <!--manual nagivation-->
+            </div>
+            <!--slider-->
+            <script type="text/javascript">
+                var counter = 1;
+                setInterval(function(){
+                    document.getElementById('radio' + counter).checked = true;
+                    counter++;
+                    if (counter> 4) {
+                        counter = 1;
+                    }
+                }, 5000);
+            </script>
+        </div>
+    </div>
+    <!--About Me-->
+</body>
+</html>
